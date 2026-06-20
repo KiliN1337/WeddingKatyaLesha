@@ -485,7 +485,6 @@ body {
 }
 
 .venue-card:nth-of-type(2) {
-    grid-template-columns: 1fr 1fr;
     direction: rtl;
 }
 
