@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадьба - Приглашение</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_YANDEX_API_KEY&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- Герой-секция -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="couple-photos">
+                <img src="assets/images/katya.jpg" alt="Невеста" class="photo-bride">
+                <img src="assets/images/lexapro.jpg" alt="Жених" class="photo-groom">
+            </div>
+            <h1 class="couple-names">
+                <span class="name-fade-in">Екатерина</span>
+                <span class="and">&</span>
+                <span class="name-fade-in">Алексей</span>
+            </h1>
+            <p class="wedding-date">21 августа 2026</p>
+            <div class="decorative-line"></div>
+        </div>
+    </section>
+
+    <!-- Секция Приглашения -->
+    <section id="invitation" class="invitation">
+        <div class="invitation-card">
+            <h2 class="section-title">Приглашение</h2>
+            <div class="invitation-text">
+                <p class="invitation-greeting">
+                    Дорогие друзья и родные!
+                </p>
+                <p class="invitation-message">
+                    Мы с радостью приглашаем вас разделить с нами самый волшебный день в нашей жизни
+                    на праздновании нашей свадьбы.
+                </p>
+                <p class="invitation-message">
+                    Будем рады видеть вас на торжестве любви и счастья!
+                </p>
+                <p class="invitation-closing">
+                    С любовью,<br>
+                    <span class="couple-signature">Катя и Лёша</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Расписания -->
+    <section class="schedule-section">
+        <h2 class="section-title">Свадебное расписание</h2>
+        <div class="schedule-container">
+            <div class="schedule-item">
+                <div class="schedule-time">13:00</div>
+                <div class="schedule-content">
+                    <h3>Торжественная регистрация брака</h3>
+                    <p class="schedule-location">г. Минусинск, ул. Октябрьская, 67</p>
+                    <p class="schedule-description">Наша регистрация пройдет в залах ЗАГСа Минусинского муниципального округа, приглашаем всех разделить с ними такой торжественный момент</p>
+                </div>
+                <div class="schedule-icon">🥂</div>
+            </div>
+
+            <div class="schedule-item">
+                <div class="schedule-time">13:30</div>
+                <div class="schedule-content">
+                    <h3>Фотосессия</h3>
+                    <p class="schedule-description">До банкета у вас будет время, чтобы узнать друг друга поближе и пофотографироваться</p>
+                </div>
+                <div class="schedule-icon">📷</div>
+            </div>
+
+            <div class="schedule-item">
+                <div class="schedule-time">17:00</div>
+                <div class="schedule-content">
+                    <h3>Праздничный банкет</h3>
+                    <p class="schedule-location">Ресторан "В Лесу" - г. Минусинск, ул. Октябрьская, 67</p>
+                    <p class="schedule-description">Здесь пройдет наш праздничный банкет</p>
+                </div>
+                <div class="schedule-icon">🍽️</div>
+            </div>
+
+            <div class="schedule-item">
+                <div class="schedule-time">23:00</div>
+                <div class="schedule-content">
+                    <h3>Окончание праздничного дня</h3>
+                    <p class="schedule-description">Даже такой день может когда-то подойти к концу</p>
+                </div>
+                <div class="schedule-icon">🚗</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Площадки -->
+    <section id="venues" class="venues">
+        <h2 class="section-title">Площадки мероприятия</h2>
+
+        <div class="venue-card venue-1">
+            <div class="venue-image">
+                <img src="assets/images/zags.jpg" alt="ЗАГС">
+            </div>
+            <div class="venue-info">
+                <h3>Место торжественной церемонии</h3>
+                <p>Регистрационный ЗАГС — начало нашего пути как семьи.</p>
+                <p>Здесь мы скажем «да» официально, а в душе —
+                    навсегда.</p>
+                <p class="venue-address">📍 Минусинск, ул. Октябрьская, 67</p>
+            </div>
+        </div>
+
+        <div class="venue-card venue-2">
+            <div class="venue-image">
+                <img src="assets/images/restoran.jpg" alt="Банкетный зал">
+            </div>
+            <div class="venue-info">
+                <h3>Место проведения банкета</h3>
+                <p>Элегантный банкетный зал с современным дизайном, где мы будем отмечать это
+                    великое событие с самыми близкими людьми.</p>
+                <p class="venue-address">📍 Пос. Топольки, ул. Есенина, 1</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Меню -->
+    <section class="menu-section">
+        <h2 class="section-title">Меню</h2>
+        <div class="menu-container">
+            <div class="menu-card">
+                <div class="menu-icon">🥂</div>
+                <h3>Аперитив</h3>
+                <p>Шампанское и закуски к встрече гостей</p>
+            </div>
+            <div class="menu-card">
+                <div class="menu-icon">🍽️</div>
+                <h3>Основное блюдо</h3>
+                <p>Изысканные горячие блюда на выбор</p>
+            </div>
+            <div class="menu-card">
+                <div class="menu-icon">🎂</div>
+                <h3>Десерт</h3>
+                <p>Свадебный торт и сладкое ассорти</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Кольца -->
+    <section class="rings-section">
+        <h2 class="section-title">Символ нашей любви</h2>
+        <div class="rings-container">
+            <div class="rings-visual">💍</div>
+            <p class="rings-text">
+                Два кольца, два сердца, одна судьба. Обручальные кольца символизируют
+                вечную и бесконечную любовь двух сердец, объединенных в одно целое.
+            </p>
+        </div>
+    </section>
+
+    <!-- Секция Даты -->
+    <section class="date-section">
+        <h2 class="section-title">Дата праздника</h2>
+        <div class="calendar">
+            <div class="calendar-header">Август 2026</div>
+            <div class="calendar-grid">
+                <div class="day header">Пн</div>
+                <div class="day header">Вт</div>
+                <div class="day header">Ср</div>
+                <div class="day header">Чт</div>
+                <div class="day header">Пт</div>
+                <div class="day header">Сб</div>
+                <div class="day header">Вс</div>
+
+                <div class="day empty"></div>
+                <div class="day empty"></div>
+                <div class="day empty"></div>
+                <div class="day empty"></div>
+                <div class="day empty"></div>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day highlight">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>
+            </div>
+        </div>
+        <p class="date-description">21 августа 2026 - Самый важный день в нашей жизни!</p>
+    </section>
+
+    <!-- Секция Фотографий -->
+    <section class="photos-section">
+        <h2 class="section-title">📸 Поделитесь моментами</h2>
+        <div class="photos-container">
+            <div class="photos-content">
+                <p class="photos-description">
+                    Опубликуйте фото дня нашей свадьбы в мессенджере <strong>"Telegram"</strong>
+                </p>
+                <p class="photos-subtitle">
+                    Ссылка-приглашение в общий чат:
+                </p>
+                <a href="https://t.me/+yESm_TFsXDw4ODQy" class="telegram-btn" target="_blank" rel="noopener noreferrer">
+                    <span class="telegram-icon">✈️</span>
+                    <span class="telegram-text">Открыть Telegram</span>
+                </a>
+                <p class="photos-info">
+                    Делитесь своими фотографиями, видео и впечатлениями! <br>
+                    Это поможет нам сохранить все самые яркие моменты нашей свадьбы вместе с вами 💕
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Часто Задаваемые Вопросы -->
+    <section class="faq-section">
+        <h2 class="section-title">Часто задаваемые вопросы</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Во что мне одеться?</h3>
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Пусть ваши наряды отражают вашу индивидуальность. Для нас нет ничего прекраснее, чем видеть
+                        близких людей такими, какие они есть. Единственное исключение — чистый белый, ведь сегодня он
+                        символизирует только одно — нашу любовь</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Можно ли взять с собой маленьких детей?</h3>
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Да, конечно! Мы рады видеть ваших детей на нашем торжестве.
+                        Пожалуйста, укажите их количество и возраст при регистрации.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Как доехать до места проведения?</h3>
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>На сайте вы найдете подробную карту с указанием обоих площадок.
+                        Мы обеспечим трансфер между местом церемонии и банкетом для всех гостей.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Существует ли список подарков?</h3>
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Ваше присутствие в день нашей свадьбы - самый значимый подарок для нас!<br>
+                        Ваши тёплые пожелания и поддержка в виде денежных подарков помогут нам осуществить наши мечты о
+                        совместном будущем.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Можно ли помочь в организации?</h3>
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Спасибо за предложение! Если у вас есть конкретные предложения или вы хотели бы помочь,
+                        напишите нам на электронную почту.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <section class="map-section">
+        <h2 class="section-title">Как нас найти</h2>
+
+        <div class="map-controls">
+            <button class="map-btn map-btn-active" data-location="ceremony">
+                <span class="map-btn-icon">⛪</span>
+                <span class="map-btn-text">ЗАГС</span>
+            </button>
+            <button class="map-btn" data-location="restaurant">
+                <span class="map-btn-icon">🍽️</span>
+                <span class="map-btn-text">Ресторан</span>
+            </button>
+        </div>
+
+        <div class="map-container">
+            <div id="map-frame" style="width: 100%; height: 400px;"></div>
+        </div>
+
+        <div class="location-info">
+            <div class="location-item ceremony-info">
+                <h3>📍 ЗАГС</h3>
+                <p>ЗАГС</p>
+                <p>Минусинск, ул. Октябрьская, 67</p>
+                <p class="time">Время: 13:00</p>
+            </div>
+            <div class="location-item restaurant-info" style="display: none;">
+                <h3>📍 Ресторан</h3>
+                <p>Ресторан "В Лесу"</p>
+                <p>Пос. Топольки, ул. Есенина 1</p>
+                <p class="time">Время: 16:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Свадьба Екатерины и Алексея</p>
+            <p>📧 <a class="social-link-tg" href="https://t.me/k_kittyy" target="_blank">Телеграм</a> | 📱 +7 (923) 015-38-07</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
